@@ -1,0 +1,20 @@
+.Cat {
+    display: block;
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.Cat img {
+    --top: 0;
+    --left: 0;
+    --rotate: 0deg;
+    --width: 120px;
+    position: absolute;
+    top: var(--top);
+    left: var(--left);
+    transform: rotate(var(----rotate));
+    display: block;
+    width: var(--width);
+    pointer-events: none;
+}
