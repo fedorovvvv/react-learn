@@ -13,7 +13,7 @@
     position: absolute;
     top: var(--top);
     left: var(--left);
-    transform: rotate(var(----rotate));
+    transform: rotate(var(--rotate));
     display: block;
     width: var(--width);
     pointer-events: none;
