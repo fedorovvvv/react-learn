@@ -1,0 +1,47 @@
+$colorBlue: #71EAFF
+
+:root
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif
+  font-synthesis: none
+  text-rendering: optimizeLegibility
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  -webkit-text-size-adjust: 100%
+  
+  --color-gray900: #000000
+  --color-gray800: #1B1C22
+  --color-gray700: #32343F
+  --color-gray600: #484B5B
+  --color-gray500: #5F6377
+  --color-gray400: #777B92
+  --color-gray300: #9397A9
+  --color-gray200: #B0B2C0
+  --color-gray100: #CCCED6
+  --color-gray60: #9E9E9E
+  --color-gray50: #E8E9ED
+  --color-gray10: #F3F3F7
+
+  --color-blue500: #{$colorBlue}
+  --color-blue400: #{scale-color($colorBlue, $lightness: +10%)}
+  --color-blue300: #{scale-color($colorBlue, $lightness: +20%)}
+  --color-blue200: #{scale-color($colorBlue, $lightness: +30%)}
+  --color-blue100: #{scale-color($colorBlue, $lightness: +40%)}
+
+
+
+*
+  padding: 0
+  margin: 0
+  box-sizing: border-box
+
+body
+  background-color: var(--color-gray10)
+  color: var(--color-gray700)
+
+#root
+  display: block
+  min-height: 100vh
+  padding: 60px 0
+
+h1
+  font-size: 42px
