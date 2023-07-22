@@ -8,6 +8,10 @@
     bottom: 0
     width: 250px
     border-right: 2px solid var(--gray400)
+    @media (max-width: 720px)
+        width: 100vw
+        position: static
+        max-height: 600px
     &__button
         border: none
         display: flex
@@ -23,6 +27,10 @@
         left: 0
         transition: .3s ease-in-out
         transition-property: background, color
+        @media (max-width: 720px)
+            order: 1
+            bottom: 0
+            top: auto
         &:hover
             background: var(--gray800)
             color: #fff

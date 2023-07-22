@@ -5,8 +5,8 @@ import Winners from './widgets/Winners'
 function App() {
   return (
     <div className='app'>
-      <Winners/>
       <TicTacToe/>
+      <Winners/>
     </div>
   )
 }

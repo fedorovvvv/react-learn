@@ -8,10 +8,14 @@ interface IWinnersProps {}
 const Winners: React.FunctionComponent<IWinnersProps> = () => {
     const {winners, cleanWinners} = useTicTacToe()
     return (
-        <aside className="Winners">
-            <button className="Winners__button" onClick={() => cleanWinners()}>Clean</button>
-            <WinnerList winners={winners.sort((a,b) => +new Date(b.date) - +new Date(a.date))} />
-        </aside>
+        <>
+            {winners.length && (
+                <aside className="Winners">
+                    <button className="Winners__button" onClick={() => cleanWinners()}>Clean</button>
+                    <WinnerList winners={winners.sort((a,b) => +new Date(b.date) - +new Date(a.date))} />
+                </aside>
+            )}
+        </>
     );
 };
 
